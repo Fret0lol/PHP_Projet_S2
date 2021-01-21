@@ -1,0 +1,1 @@
+<h1>Pas de jeux pour le moment :(</h1>

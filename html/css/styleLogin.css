@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    font-weight: 700;
+}
+body{
+    background-color: #221F1F;
+    background-image: url("../images/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body form{
+    background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    height: 40em;
+    width: 26em;
+    margin: auto; 
+
+    border: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.22),
+     0px 31.0699px 26.3603px rgba(0, 0, 0, 0.145606),
+      0px 7.47777px 13.4232px rgba(0, 0, 0, 0.0948327),
+       0px 1.23811px 7.4987px rgba(0, 0, 0, 0.0637248),
+        0px 0.976451px 4.00631px rgba(0, 0, 0, 0.048523),
+         0px 1.43529px 1.67826px rgba(0, 0, 0, 0.0437192);
+}
+
+body form .form_header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    height: 16em;
+    width: 100%;
+}
+body form .form_header .form_header_logo img{
+    margin-bottom: 2em;
+
+    border-radius: 5px;  
+}
+
+body form .form_body{
+    display: flex;
+    flex-direction: column;
+    
+    height: 20em;
+}
+body form .form_body label{
+    position: relative;
+    margin: 1em 0 0 0;
+}
+
+body form .form_body label input{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color: #221F1F;
+    background-color: transparent;
+
+    padding: 1em 3.2em 1em 1.2em;
+    min-width: 16em;
+    z-index: 1;
+
+    border-radius: 10px;
+    border: 2px solid #221F1F;
+
+    transition: border-color 0.2s;
+}
+
+body form .form_body label input:focus{
+    outline: none;
+    border-color: #E50914;
+}
+
+label input:focus + p,
+label input:not(:placeholder-shown) + p{
+    top: -27%;
+    font-size: 0.9em;
+    color: #E50914;
+    z-index: 1;
+}
+
+label input:not(:focus) + p{
+    color: #221F1F;
+}
+
+label p{
+    color: #221F1F;
+    font-size: 1.2em;
+    user-select: none;
+    pointer-events: none;
+
+    position: absolute;
+    top: 17%;
+    transform: translateY(-50%);
+    z-index: 0;
+
+    margin-left: 0.8em;
+    padding: 0 0.4em;
+
+    background: #f4f4f4;
+
+    transition: top 0.2s, font-size 0.2s, color 0.2s;
+}
+
+label .password-icon{
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    right: 1.2em;
+    transform: translateY(-50%);
+    width: 1.2em;
+
+    color: #221F1F;
+    transition: color 0.2s;
+}
+
+label .password-icon .feather-eye-off{
+    display: none;
+}
+
+label .password-icon:hover{
+    cursor: pointer;
+    color: #E50914;
+}
+
+.select{
+    user-select: none;
+}
+
+
+button {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    
+    min-width: 100%;
+    margin: 1em 0;
+    height: 3em;
+    cursor: pointer;
+    color: #f0f0f0;
+	background: #E50914;
+	border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    transition: 150ms ease-in;
+    
+}
+
+button:hover {
+    border: none;
+    box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.22),
+    0px 20px 26.3603px rgba(0, 0, 0, 0.145606),
+     0px 7.47777px 13.4232px rgba(0, 0, 0, 0.0948327),
+      0px 1.23811px 7.4987px rgba(0, 0, 0, 0.0637248)/*,
+       0px 0.976451px 4.00631px rgba(0, 0, 0, 0.048523),
+        0px 1.43529px 1.67826px rgba(0, 0, 0, 0.0437192)*/;
+    transform: translateY(-2px);
+}
+
+button:focus {
+	outline: none;
+}
+
+.error_message{
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    color: #E50914;
+    font-size: 0.9em;
+}
+
+form .form_body p a,
+form .form_body p a:hover,
+form .form_body p a:active {
+    color: #E50914;
+}
+
+@media only screen and (max-width: 450px) {
+    form {
+      height: 100vh;
+      width: 100vw;
+      border-radius: 0;
+    }
+  }

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background: #221f1f;
+	font-family: "Montserrat", sans-serif;
+}
+/*-- Acceuil --*/
+.acceuil {
+	width: 100%;
+	height: 16vh;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.acceuil p {
+	font-size: 2em;
+}
+
+.acceuil p span {
+	color: #e50914;
+}
+
+/*- Aside --*/
+aside {
+	position: fixed;
+	top: 40%;
+	right: 0;
+	background-color: #e50914;
+
+	padding: 1em 2em;
+	border-radius: 25px 0px 0px 25px;
+}
+aside a:hover img{
+	opacity: 0.8;
+}
+aside img {
+	transition: all 0.5s ease;
+	margin: 0 1em;
+}
+
+.collection-jeux {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: hidden;
+	height: 74vh;
+	
+}
+.jeu-container {
+	display: flex;
+	justify-content: space-evenly;
+	height: 100%;
+
+}
+.jeu-collection {
+	position: relative;
+	overflow: hidden;
+	margin: 0 1em;
+	border: solid 3px transparent;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	pointer-events: all;
+}
+.jeu-collection img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+.BONJOUR{
+	display: none;
+}
+.jeu-collection:hover {
+	border-color: #e50914;
+}
+.jeu-collection:hover img {
+	opacity: 0.7;
+}
+.jeu-info {
+	display: none;
+}
+.jeu-container.active {
+	justify-content: space-evenly;
+	width: 100%;
+}
+.jeu-container.active .jeu-collection {
+	width: 30%;
+	border: none;
+}
+
+.jeu-container.active .jeu-info {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	align-items: flex-start;
+	justify-content: space-between;
+	color: white;
+	
+}
+.jeu-info .info {
+	margin: 2em;
+}
+
+.jeu-btn-supprimer{
+	padding: 1rem 2rem;
+	background-color: #e50914;
+	border: none;
+	cursor: pointer;
+	color: white;
+	margin-top: 1rem;
+	font-size: 1em;
+}
+
+.retour{
+	display: inline-block;
+	padding: 1rem 2rem;
+	outline: 3px solid #e50914;
+	cursor: pointer;
+	color: #e50914;
+	margin-top: 1rem;
+	text-decoration: none;
+}

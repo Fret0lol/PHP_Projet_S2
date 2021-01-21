@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #221f1f;
+    scroll-behavior: smooth;
+}
+main{
+    width: 100%;
+
+    margin-top: 3em;
+    color: aliceblue;
+    font-family: 'Montserrat';
+}
+main table{
+    width: 70%;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+main table thead{
+    font-size: 2vw;
+    background-color: #e50914;
+}
+main table thead{
+
+}
+main table tbody tr{
+    
+}
+main table tbody tr td{
+    border: 1px solid #fff;
+}
+/* main table tbody tr td button{
+    display: none;
+}
+main table tbody tr:hover td button{
+    display: block;
+} */
+
+.supprimer-btn{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: solid 2px #e50914;
+    background-color: white;
+    padding: 0.5em 1em;
+    color: #e50914;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+
+.supprimer-btn:hover{
+    background: #e50914;
+    color: white;
+}
+
+.table-data{
+    padding-left: 0.5em;
+}
+
+@media screen and (max-width : 500px){
+    main table{
+        width: 100%;
+    }
+}
